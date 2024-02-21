@@ -33,9 +33,9 @@
 				<h2 class="products-title">Ofertas</h2>
 			</div>
 			<!-- Show the "in-sale" products -->
-			<% products.filter(product => product.category === "in-sale").forEach(product => { %>
+			<% productsInSale.forEach(product=> { %>
 				<%- include('./partials/cardProduct', {product}) %>
-			<% }) %>
+				<% }) %>
 		
 		</div>
 	</div>
